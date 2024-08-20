@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'nunito', sans-serif;
+}
+.sidebar {
+    height: 130vh;
+    padding: 20px;
+    border-right: 1px solid #676565;
+    font-family: 'montserrat', sans-serif;
+}
+.sidebar .nav-link {
+    color: #FF0000;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+.sidebar .nav-link.active {
+}
+.sidebar .nav-link img{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.main-content {
+    padding-top: 20px;
+}
+.btn.btn-outline-red{
+    border: 0.5px solid #FF0000;
+    border-radius: 27px;
+    background-color: #fff;
+    color: #FF0000;
+}
+.btn.btn-outline-red:hover{
+    color: #fff;
+    background-color: #FF0000;
+}
+.btn.btn-red{
+    background-color: #FF0000;
+    color: #fff;
+    padding: 5px 15px;
+}
+.btn.btn-red-long{
+    background-color: #FF0000;
+    color: #fff;
+    padding: 5px 50px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+}
+.navbar .nav-link{
+    color: #000;
+    font-weight: 600;
+}
+.card {
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 20px;
+}
+.card-title {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    margin: 20px 0 20px 50px;
+}
+.safety-feed{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 110vh;
+}
+.header{
+    color: #FF0000;
+    font-family: 'poppins', sans-serif;
+}
+.report-incident{
+    color: #797979;
+    font-weight: 700;
+}
+.report-incident-1 .photo{
+    background-color: #F4F4F4;
+    border-radius: 8px
+}
+.report-incident-1 .dotted-container{
+    border: 3px dotted #C4C4C4;
+    border-radius: 8px;
+    padding: 30px 60px;
+    cursor: pointer;
+}
+.report-incident-1 textarea{
+    background-color: #F4F4F4;
+    border: none;
+}
+.footer{
+    background-color: #475367 !important;
+    color: white;
+    padding: 20px 0;
+}
+.footer a {
+    color: #fff;
+}
+.footer p {
+    margin: 0;
+}

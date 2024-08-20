@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Feed</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <div class="text-center mb-4">
+                    <img src="images/profile-pic.svg" class="rounded-circle" alt="Profile" width="60">
+                    <p class="mt-2 font-weight-bold">John Doe</p>
+                    <p class="font-weight-bold">johndoe@yahoo.com</p>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><img src="images/home (1).svg" alt="" width="20" height="20">Safety Feed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report-incident.html"><img src="images/test-results.png" alt="" width="20" height="20">Report Incident</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report-history.html"><img src="images/history.svg" alt="" width="20" height="20">Report History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html"><img src="images/profile.svg" alt="" width="20" height="20">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="security.html"><img src="images/shield.svg" alt="" width="20" height="20"> Security</a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a class="nav-link" href=""><img src="images/logout.svg" alt="" width="20" height="20">Logout</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 main-content px-5">
+                <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-outline-red" type="submit">Contact Support</button>
+                    </div>
+                  </nav>
+                
+               <section class="report-incident-1">
+                <h3 class="header font-weight-bold mb-4">Report Incident</h3>
+                <span>Location: Onne, Port Harcourt</span>
+                <div class="row my-3">
+                    <div class="col-md-6 text-center photo d-flex flex-column align-items-center py-4">
+                        <div class="row">
+                           <div class="dotted-container text-center mb-3" id="upload-container">
+                                <i class='bx bxs-camera-plus' style="font-size: 25px; color: #C4C4C4;"></i>
+                            </div> 
+                        </div>
+                        <span class="font-weight-bold">Click to capture <br>photos of the incident</span>
+                    </div>
+                    <!-- Hidden file input -->
+                    <input type="file" id="file-input" style="display: none;" accept="image/*" multiple>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="image-preview"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="input col-md-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="description" class="font-weight-bold">Describe the situation</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="input col-md-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="tags" class="font-weight-bold">Select relevant tags</label>
+                                <textarea class="form-control" id="tags" rows="1"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="report-incident-preview.html"><button class="btn btn-red-long">Next</button></a>
+                
+            </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-lg-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo.svg" alt="">
+                    <p>Safescout provides an easy-to-use platform for reporting and managing workplace safety incidents.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Product</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Landing pages</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Guides and resources</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 Safescout - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
